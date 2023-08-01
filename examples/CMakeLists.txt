@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.1)
 project(examples)
 
 list(APPEND SPIRV_REFLECT_FILES
-  ${CMAKE_SOURCE_DIR}/spirv_reflect.h
-  ${CMAKE_SOURCE_DIR}/spirv_reflect.c
+  ${CMAKE_CURRENT_LIST_DIR}/../spirv_reflect.h
+  ${CMAKE_CURRENT_LIST_DIR}/../spirv_reflect.c
 )
 
 list(APPEND COMMON_FILES

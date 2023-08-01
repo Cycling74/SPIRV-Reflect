@@ -106,11 +106,11 @@ if (SPIRV_REFLECT_BUILD_TESTS)
 endif()
 
 if(SPIRV_REFLECT_STATIC_LIB)
-    add_library(spirv-reflect-static STATIC ${CMAKE_CURRENT_SOURCE_DIR}/spirv_reflect.h
-                                     ${CMAKE_CURRENT_SOURCE_DIR}/spirv_reflect.c)
+    add_library(spirv-reflect-static STATIC ${CMAKE_CURRENT_LIST_DIR}/spirv_reflect.h
+                                     ${CMAKE_CURRENT_LIST_DIR}/spirv_reflect.c)
 
     target_include_directories(spirv-reflect-static
-                               PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+                               PUBLIC ${CMAKE_CURRENT_LIST_DIR})
     install(TARGETS spirv-reflect-static LIBRARY DESTINATION lib)
 endif()
 
